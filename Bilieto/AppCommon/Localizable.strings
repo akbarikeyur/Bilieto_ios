@@ -1,0 +1,65 @@
+//change password
+
+"enter_old_password" = "Please enter old password.";
+"enter_new_password" = "Please enter new password.";
+"enter_confirm_password" = "Please enter confirm password.";
+"old_password_and_new_password_must_not_be_same" = "Sorry new password must not be same as current one.";
+"new_password_and_confirm_password_must_be_same" = "Sorry new password and confirm password must be same.";
+
+
+//signUp
+
+"enter_first_name" = "Please enter first name.";
+"enter_last_name" = "Please enter last name.";
+"enter_email" = "Please enter email address.";
+"invalid_email" = "Invalid email address.";
+"enter_profession" = "Please enter profession.";
+"select_month" = "Please select month";
+"enter_date" = "Please enter date";
+"enter_year" = "please enter year";
+"enter_password" = "Please enter password.";
+"repeat_new_password" = "Please repeat new password";
+"repeat_pwd_not_match" = "Repeat password doesn't match";
+"register_success" = "Register successfully";
+"year_min_char" = "year must contain four character";
+"enter_date" = "Please enter valid date";
+"show_email" = "check your inbox";
+"signup_success" = "SignUp Success";
+
+
+//Service
+
+"register_error" = "Error in registeration";
+"login_error" = "Error in Login";
+"something_went_wrong" = "Oops! Something went wrong. Please try again";
+"changepassword_success" = "Password change successfully";
+
+
+//No data found messages
+"public_bilboards_not_found" = "No public bilboard founds";
+"my_bilboards_not_found" = "No bilboard founds";
+"style_not_found" = "No style found";
+"boardCard_not_found" = "Cards not found in selected BilBoards";
+
+//Edit profile
+
+"enter_phone" = "Please enter phone number";
+"enter_skype_address" = "Please enter skype address";
+"enter_city" = "Please enter city";
+"invalid_state" = "Please enter state";
+"select_zipcode" = "Please enter zipcode";
+"enter_country" = "Please enter country";
+"enter_address" = "Please enter address";
+"enter_blog" = "Please enter blog";
+"enter_website" = "Please enter website";
+
+"enter_about" = "Please enter aboutus";
+"enter_status" = "Please enter status";
+"enter_place" = "Please enter place";
+"enter_school_name" = "Please enter schoolname";
+"enter_interest" = "Please enter interest";
+"enter_tag" = "Please enter tag";
+
+"enter_facebook_account" = "Please enter facebook accound";
+"enter_instagram_account" = "Please enter instagram accound";
+"enter_twitter_account" = "Please enter twitter accound";

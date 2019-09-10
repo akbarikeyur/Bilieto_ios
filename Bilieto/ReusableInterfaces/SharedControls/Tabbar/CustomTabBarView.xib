@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Q15-5M-XPA" customClass="CustomTabBarView" customModule="Bilieto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PmN-fH-KYm">
+                    <rect key="frame" x="0.0" y="1" width="64" height="59"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Loi-WM-EA2" customClass="Button" customModule="Bilieto" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="59"/>
+                            <state key="normal" image="home"/>
+                            <connections>
+                                <action selector="tabBtnClicked:" destination="Q15-5M-XPA" eventType="touchUpInside" id="6xk-v9-alN"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Loi-WM-EA2" firstAttribute="leading" secondItem="PmN-fH-KYm" secondAttribute="leading" id="D46-NE-AyI"/>
+                        <constraint firstItem="Loi-WM-EA2" firstAttribute="top" secondItem="PmN-fH-KYm" secondAttribute="top" id="EuK-mV-4cP"/>
+                        <constraint firstAttribute="trailing" secondItem="Loi-WM-EA2" secondAttribute="trailing" constant="4" id="xhT-zg-9LE"/>
+                        <constraint firstAttribute="bottom" secondItem="Loi-WM-EA2" secondAttribute="bottom" id="zqy-09-XWQ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AW9-e8-ljN">
+                    <rect key="frame" x="64" y="1" width="64" height="59"/>
+                    <subviews>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKD-KE-dDy" customClass="Button" customModule="Bilieto" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="59"/>
+                            <state key="normal" image="search"/>
+                            <state key="selected" image="search"/>
+                            <connections>
+                                <action selector="tabBtnClicked:" destination="Q15-5M-XPA" eventType="touchUpInside" id="x7L-fK-NaQ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="sKD-KE-dDy" firstAttribute="top" secondItem="AW9-e8-ljN" secondAttribute="top" id="Lp7-wz-UHf"/>
+                        <constraint firstAttribute="bottom" secondItem="sKD-KE-dDy" secondAttribute="bottom" id="Y27-FP-Hme"/>
+                        <constraint firstItem="sKD-KE-dDy" firstAttribute="leading" secondItem="AW9-e8-ljN" secondAttribute="leading" id="YWg-qP-aWs"/>
+                        <constraint firstAttribute="trailing" secondItem="sKD-KE-dDy" secondAttribute="trailing" constant="4" id="wg7-Rg-hwB"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T4S-Oa-rq8">
+                    <rect key="frame" x="128" y="1" width="64" height="59"/>
+                    <subviews>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvt-KB-HrU" customClass="Button" customModule="Bilieto" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="59"/>
+                            <state key="normal" image="tamplate"/>
+                            <state key="selected" image="tamplate"/>
+                            <connections>
+                                <action selector="tabBtnClicked:" destination="Q15-5M-XPA" eventType="touchUpInside" id="k9b-N7-JKO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="pvt-KB-HrU" secondAttribute="trailing" constant="4" id="7Bt-Cb-Wqp"/>
+                        <constraint firstItem="pvt-KB-HrU" firstAttribute="leading" secondItem="T4S-Oa-rq8" secondAttribute="leading" id="gDr-b1-cyg"/>
+                        <constraint firstAttribute="bottom" secondItem="pvt-KB-HrU" secondAttribute="bottom" id="k3Y-zT-1VJ"/>
+                        <constraint firstItem="pvt-KB-HrU" firstAttribute="top" secondItem="T4S-Oa-rq8" secondAttribute="top" id="z3r-Ft-djE"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u3u-Ak-9wn">
+                    <rect key="frame" x="192" y="1" width="60" height="59"/>
+                    <subviews>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UxO-yD-d0h" customClass="Button" customModule="Bilieto" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="59"/>
+                            <state key="normal" image="chat"/>
+                            <state key="selected" image="chat"/>
+                            <connections>
+                                <action selector="tabBtnClicked:" destination="Q15-5M-XPA" eventType="touchUpInside" id="hIf-E4-8fQ"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="4" translatesAutoresizingMaskIntoConstraints="NO" id="mhM-7J-buM" customClass="Label" customModule="Bilieto" customModuleProvider="target">
+                            <rect key="frame" x="30" y="15" width="12" height="12"/>
+                            <color key="backgroundColor" red="0.89803921568627454" green="0.27058823529411763" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="12" id="vPI-5c-vsh"/>
+                                <constraint firstAttribute="height" constant="12" id="ygA-1a-6vJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="7"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="UxO-yD-d0h" firstAttribute="leading" secondItem="u3u-Ak-9wn" secondAttribute="leading" id="HiO-XE-3lZ"/>
+                        <constraint firstItem="mhM-7J-buM" firstAttribute="top" secondItem="u3u-Ak-9wn" secondAttribute="top" constant="15" id="J9k-Kt-2qz"/>
+                        <constraint firstAttribute="trailing" secondItem="UxO-yD-d0h" secondAttribute="trailing" id="OW3-LH-auL"/>
+                        <constraint firstAttribute="bottom" secondItem="UxO-yD-d0h" secondAttribute="bottom" id="P0M-hk-u0D"/>
+                        <constraint firstItem="UxO-yD-d0h" firstAttribute="top" secondItem="u3u-Ak-9wn" secondAttribute="top" id="cad-73-PoE"/>
+                        <constraint firstAttribute="trailing" secondItem="mhM-7J-buM" secondAttribute="trailing" constant="18" id="rcp-jt-iBy"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oze-4V-uXV">
+                    <rect key="frame" x="256" y="1" width="64" height="59"/>
+                    <subviews>
+                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLU-Ei-5jc" customClass="Button" customModule="Bilieto" customModuleProvider="target">
+                            <rect key="frame" x="17" y="14" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="3Wk-NF-eUe"/>
+                                <constraint firstAttribute="height" constant="30" id="ItW-Ee-WD6"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="applyCornerRadius" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderColorTypeAdapter">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="tabBtnClicked:" destination="Q15-5M-XPA" eventType="touchUpInside" id="kmb-gL-7Yw"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="rLU-Ei-5jc" firstAttribute="top" secondItem="Oze-4V-uXV" secondAttribute="top" constant="14" id="ELR-dB-kcU"/>
+                        <constraint firstItem="rLU-Ei-5jc" firstAttribute="centerX" secondItem="Oze-4V-uXV" secondAttribute="centerX" id="nfm-CM-oYN"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XJR-O9-TTZ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="IBR-NK-ViK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="T4S-Oa-rq8" firstAttribute="leading" secondItem="AW9-e8-ljN" secondAttribute="trailing" id="57X-5i-7na"/>
+                <constraint firstAttribute="bottom" secondItem="T4S-Oa-rq8" secondAttribute="bottom" id="5Cs-rs-MV4"/>
+                <constraint firstItem="u3u-Ak-9wn" firstAttribute="width" secondItem="PmN-fH-KYm" secondAttribute="width" constant="-4" id="6S9-W2-l1F"/>
+                <constraint firstItem="AW9-e8-ljN" firstAttribute="leading" secondItem="PmN-fH-KYm" secondAttribute="trailing" id="7cv-QI-yq1"/>
+                <constraint firstItem="PmN-fH-KYm" firstAttribute="top" secondItem="Q15-5M-XPA" secondAttribute="top" constant="1" id="8Qs-Rh-59f"/>
+                <constraint firstItem="u3u-Ak-9wn" firstAttribute="top" secondItem="Q15-5M-XPA" secondAttribute="top" constant="1" id="BGR-sb-Xlg"/>
+                <constraint firstItem="Oze-4V-uXV" firstAttribute="leading" secondItem="u3u-Ak-9wn" secondAttribute="trailing" constant="4" id="CIE-Hh-AEa"/>
+                <constraint firstAttribute="trailing" secondItem="XJR-O9-TTZ" secondAttribute="trailing" id="D4j-ck-2vP"/>
+                <constraint firstItem="XJR-O9-TTZ" firstAttribute="top" secondItem="Q15-5M-XPA" secondAttribute="top" id="Etx-D5-xll"/>
+                <constraint firstItem="Oze-4V-uXV" firstAttribute="top" secondItem="Q15-5M-XPA" secondAttribute="top" constant="1" id="IOK-P7-Wad"/>
+                <constraint firstAttribute="bottom" secondItem="u3u-Ak-9wn" secondAttribute="bottom" id="IgF-r4-402"/>
+                <constraint firstItem="u3u-Ak-9wn" firstAttribute="leading" secondItem="T4S-Oa-rq8" secondAttribute="trailing" id="MNa-Lq-OHq"/>
+                <constraint firstItem="T4S-Oa-rq8" firstAttribute="width" secondItem="PmN-fH-KYm" secondAttribute="width" id="N8p-JT-KqW"/>
+                <constraint firstAttribute="bottom" secondItem="AW9-e8-ljN" secondAttribute="bottom" id="NAE-Bf-toJ"/>
+                <constraint firstAttribute="trailing" secondItem="Oze-4V-uXV" secondAttribute="trailing" id="Qaa-3H-ift"/>
+                <constraint firstItem="AW9-e8-ljN" firstAttribute="width" secondItem="PmN-fH-KYm" secondAttribute="width" id="UOJ-hE-Ah2"/>
+                <constraint firstAttribute="bottom" secondItem="PmN-fH-KYm" secondAttribute="bottom" id="Z3w-u9-GsT"/>
+                <constraint firstItem="Oze-4V-uXV" firstAttribute="width" secondItem="PmN-fH-KYm" secondAttribute="width" id="cD9-i3-uhD"/>
+                <constraint firstItem="T4S-Oa-rq8" firstAttribute="top" secondItem="Q15-5M-XPA" secondAttribute="top" constant="1" id="jxU-BK-jnE"/>
+                <constraint firstItem="PmN-fH-KYm" firstAttribute="leading" secondItem="Q15-5M-XPA" secondAttribute="leading" id="qfI-tR-xI3"/>
+                <constraint firstAttribute="bottom" secondItem="Oze-4V-uXV" secondAttribute="bottom" id="r83-zu-Zzi"/>
+                <constraint firstItem="AW9-e8-ljN" firstAttribute="top" secondItem="Q15-5M-XPA" secondAttribute="top" constant="1" id="ysQ-u0-P6o"/>
+                <constraint firstItem="XJR-O9-TTZ" firstAttribute="leading" secondItem="Q15-5M-XPA" secondAttribute="leading" id="z0O-gJ-kpd"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btn1" destination="Loi-WM-EA2" id="aLo-XV-Cvm"/>
+                <outlet property="btn2" destination="sKD-KE-dDy" id="bsF-sv-8kC"/>
+                <outlet property="btn3" destination="pvt-KB-HrU" id="KMD-yf-ALn"/>
+                <outlet property="btn4" destination="UxO-yD-d0h" id="gQD-TW-7xp"/>
+                <outlet property="btn5" destination="rLU-Ei-5jc" id="Zn1-rK-gxr"/>
+                <outlet property="chatLbl" destination="mhM-7J-buM" id="kIh-my-hF8"/>
+            </connections>
+            <point key="canvasLocation" x="-126" y="-473"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chat" width="22" height="22"/>
+        <image name="home" width="20" height="20"/>
+        <image name="search" width="20" height="20"/>
+        <image name="tamplate" width="20" height="20"/>
+    </resources>
+</document>

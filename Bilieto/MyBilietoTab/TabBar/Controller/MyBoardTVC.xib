@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MyBoardTVC" rowHeight="110" id="KGk-i7-Jjw" customClass="MyBoardTVC" customModule="Bilieto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7z0-bd-Ti2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="109.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDy-eb-PzB">
+                                <rect key="frame" x="8" y="15" width="80" height="79.5"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79.5" id="Axp-Rq-XZ1"/>
+                                    <constraint firstAttribute="width" constant="80" id="GqA-Wc-ylM"/>
+                                </constraints>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name,User Name,User Name,User Name,User " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHj-C2-vhi" customClass="Label" customModule="Bilieto" customModuleProvider="target">
+                                <rect key="frame" x="96" y="61" width="216" height="33"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="R14"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ciw-70-mSa">
+                                <rect key="frame" x="0.0" y="108.5" width="320" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="nLC-aR-1PT"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qjP-vW-Pia" customClass="Label" customModule="Bilieto" customModuleProvider="target">
+                                <rect key="frame" x="96" y="15" width="216" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="B14"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tnu-kr-i74" customClass="Label" customModule="Bilieto" customModuleProvider="target">
+                                <rect key="frame" x="96" y="38" width="22" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="lTQ-Lu-LZ3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="B14"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WY7-UX-ohm" customClass="Label" customModule="Bilieto" customModuleProvider="target">
+                                <rect key="frame" x="121" y="38" width="191" height="16.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="R14"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WY7-UX-ohm" secondAttribute="trailing" constant="8" id="2ph-yc-t9R"/>
+                            <constraint firstAttribute="trailing" secondItem="qjP-vW-Pia" secondAttribute="trailing" constant="8" id="6ku-mf-Kzp"/>
+                            <constraint firstItem="ciw-70-mSa" firstAttribute="top" secondItem="aDy-eb-PzB" secondAttribute="bottom" constant="14" id="EU9-79-C2w"/>
+                            <constraint firstItem="aDy-eb-PzB" firstAttribute="leading" secondItem="7z0-bd-Ti2" secondAttribute="leading" constant="8" id="GEV-hH-55j"/>
+                            <constraint firstItem="ciw-70-mSa" firstAttribute="leading" secondItem="7z0-bd-Ti2" secondAttribute="leading" id="KDo-xh-1J0"/>
+                            <constraint firstItem="WY7-UX-ohm" firstAttribute="centerY" secondItem="Tnu-kr-i74" secondAttribute="centerY" id="PEC-63-dJf"/>
+                            <constraint firstAttribute="trailing" secondItem="ciw-70-mSa" secondAttribute="trailing" id="Xtx-Og-nYZ"/>
+                            <constraint firstItem="HHj-C2-vhi" firstAttribute="top" secondItem="Tnu-kr-i74" secondAttribute="bottom" constant="6" id="bGR-PX-b6n"/>
+                            <constraint firstAttribute="bottom" secondItem="ciw-70-mSa" secondAttribute="bottom" id="cT9-3u-VOJ"/>
+                            <constraint firstItem="qjP-vW-Pia" firstAttribute="top" secondItem="7z0-bd-Ti2" secondAttribute="top" constant="15" id="d2W-Gr-UXM"/>
+                            <constraint firstItem="WY7-UX-ohm" firstAttribute="leading" secondItem="Tnu-kr-i74" secondAttribute="trailing" constant="3" id="hGY-sx-Uhw"/>
+                            <constraint firstItem="Tnu-kr-i74" firstAttribute="leading" secondItem="aDy-eb-PzB" secondAttribute="trailing" constant="8" id="kGR-qz-B9H"/>
+                            <constraint firstItem="Tnu-kr-i74" firstAttribute="top" secondItem="qjP-vW-Pia" secondAttribute="bottom" constant="6" id="s9M-ZO-yDW"/>
+                            <constraint firstItem="qjP-vW-Pia" firstAttribute="leading" secondItem="aDy-eb-PzB" secondAttribute="trailing" constant="8" id="xRX-0l-4l5"/>
+                            <constraint firstAttribute="trailing" secondItem="HHj-C2-vhi" secondAttribute="trailing" constant="8" id="yZT-Ky-Wo1"/>
+                            <constraint firstItem="aDy-eb-PzB" firstAttribute="top" secondItem="7z0-bd-Ti2" secondAttribute="top" constant="15" id="zRn-CN-Spb"/>
+                            <constraint firstItem="HHj-C2-vhi" firstAttribute="leading" secondItem="aDy-eb-PzB" secondAttribute="trailing" constant="8" id="zlu-Kr-lDd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="7z0-bd-Ti2" secondAttribute="trailing" id="G4w-ns-5SS"/>
+                    <constraint firstAttribute="bottom" secondItem="7z0-bd-Ti2" secondAttribute="bottom" id="WWb-6v-70v"/>
+                    <constraint firstItem="7z0-bd-Ti2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="d4l-hO-VQg"/>
+                    <constraint firstItem="7z0-bd-Ti2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zAS-S1-Mud"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="boardDiscriptionLbl" destination="HHj-C2-vhi" id="glw-yg-ONi"/>
+                <outlet property="boardImgBtn" destination="aDy-eb-PzB" id="jn2-fc-Upd"/>
+                <outlet property="boardNameLbl" destination="qjP-vW-Pia" id="3Ax-WS-i84"/>
+                <outlet property="userNameLbl" destination="WY7-UX-ohm" id="oZ9-yo-ewx"/>
+            </connections>
+            <point key="canvasLocation" x="10" y="81"/>
+        </tableViewCell>
+    </objects>
+</document>
